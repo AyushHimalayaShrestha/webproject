@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/muscle.jpg" type="image/x-icon">
+  <title>Trainers | Muscle Mania Fitness Club</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+   <!-- BoxIcon -->
+   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #fff;
+        }
+        .signup-container {
+            
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 50px 0;
+        }
+        .signup-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .buttons .btn{
+            margin-left: 10px;
+        }
+        .footer {
+      background-color: #222;
+      color: #bbb;
+      padding: 20px;
+      width: 100%; /* Ensures footer spans the full width of the page */
+    text-align: center;
+   
+    }
+
+
+    .trainer-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .trainer-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .trainer-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .trainer-card h4 {
+      font-size: 20px;
+      margin: 15px 0;
+    }
+
+    .trainer-card p {
+      font-size: 14px;
+      color: #6c757d;
+      margin-bottom: 15px;
+    }
+    .social-icons{
+        align-items: center;
+    }
+
+    .social-icons a {
+      color: #6d5bba;
+      font-size: 18px;
+      margin-right: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #4b38a3;
+    }
+    .footer {
+      background-color: #222;
+      color: #bbb;
+      padding: 20px;
+      width: 100%; /* Ensures footer spans the full width of the page */
+    text-align: center;
+   
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">Muscle Mania Fitness Club</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/trainers.html">Trainers</a></li>
+          <li class="nav-item"><a class="nav-link" href="/membership.html">Membership</a></li>
+          <div class="buttons">
+            <button class="btn btn-primary">
+                <li class="nav-item"><a class="text-decoration-none text-white " href="/login.html">Login</a></li>
+              </button>
+              <button class="btn btn-success">
+                <li class="nav-item"><a class="text-decoration-none text-white" href="/signup.html">Sign-Up</a></li>
+              </button>
+            </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Trainers Section -->
+  <section class="py-5 mt-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="text-primary">Meet Our Trainers</h2>
+        <p class="text-muted text-secondary" data-aos="fade-up" data-aos-delay="200">
+          Our certified trainers are here to guide you on your fitness journey.
+        </p>
+      </div>
+      <div class="row">
+        <!-- Trainer 1 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="trainer-card">
+            <img src="/images/kancha.jpg" class="trainer-img" alt="Trainer 1">
+            <div class="p-3">
+              <h4>Dipendra Pyakurel</h4>
+              <p>Specialization: Fitness Training + Founder</p>
+              <p>Experience: 18 years</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100055934958421"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/the__kancharaja/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Trainer 2 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="trainer-card">
+            <img src="/images/liladhar.jpg" class="trainer-img" alt="Trainer 2">
+            <div class="p-3">
+              <h4>LilaDhar Khakda</h4>
+              <p>Specialization: Cardio and Aerobics Expert</p>
+              <p>Experience: 10 years</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/liladhar.khadka.710"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/surprise_khadka/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Trainer 3 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="trainer-card">
+            <img src="/images/babatamang.jpg" class="trainer-img" alt="Trainer 3">
+            <div class="p-3">
+              <h4>Baba Tamang</h4>
+              <p>Specialization: Zumba and Dance Instructor</p>
+              <p>Experience: 15 years</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/natisha.bomjan"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/babatamang5/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- Trainer 4 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="trainer-card">
+              <img src="/images/pramod.jpg" class="trainer-img" alt="Trainer 4">
+              <div class="p-3">
+                <h4>Pramod Shrestha</h4>
+                <p>Specialization: Strength Trainer</p>
+                <p>Experience: 10 years</p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/pramod.shrestha.1800"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Trainer 5 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="trainer-card">
+              <img src="" class="trainer-img" alt="Trainer 5">
+              <div class="p-3">
+                <h4>Ashok Putuwar</h4>
+                <p>Specialization: Fitness Trainer</p>
+                <p>Experience: 12 years</p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/ashok.putuwar.7"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/ashok.putuwar/"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Trainer 6 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="trainer-card">
+              <img src="/images/Sagar.jpg" class="trainer-img" alt="Trainer 6">
+              <div class="p-3">
+                <h4>Sagar Nagarkoti</h4>
+                <p>Specialization: Zumba And Dance Instructor</p>
+                <p>Experience: 12 years</p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/tenzin.sagar"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/ashok.putuwar/"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Footer -->
+      <footer class="footer text-center">
+    
+        <p>
+            &copy; 2025 Muscle Mania Fitness Club. All Rights Reserved. &nbsp; Follow us on  
+           
+            <a class="text-decoration-none text-white fs-4 p-2" href="https://www.facebook.com/groups/688611127941581"><i
+                class='bx bxl-facebook'></i></a>
+        <a class="text-decoration-none text-white fs-4 p-2"
+            href="https://www.instagram.com/muscle_mania_fitness_club_/"> <i class='bx bxl-instagram'></i></a>
+        <a class="text-decoration-none text-white fs-4 p-2" href="https://www.tiktok.com/@musclemaniafitnessclub"> <i
+                class='bx bxl-tiktok'></i></a>
+            </p>
+    </footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
