@@ -281,18 +281,17 @@
 <body>
 
   <!-- Navbar -->
- 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 container">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="/index.html">Muscle Mania Fitness Club</a>
+      <a class="navbar-brand" href="/index.html">Muscle Mania Fitness Club</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="z-index: 1000;">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="/trainers.html">Trainers</a></li>
           <li class="nav-item"><a class="nav-link" href="/membership.html">Membership</a></li>
@@ -309,6 +308,57 @@
     </div>
   </nav>
 
+<div class="container-fluid">
+
+  <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel" data-bs-interval="2700">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner container-fluid">
+      <div class="carousel-item active position-relative">
+        <img src="/images/musclemania.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h3>Welcome to Muscle Mania Fitness Club</h3>
+          <p>Start your journey to a healthier you!</p>
+          <a href="/login.html" class="btn btn-primary">Join Us Now</a>
+        </div>
+        <div class="color position-absolute top-0 start-0 bottom-0 end-0 container-fluid"></div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/gym2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h3>Achieve Your Fitness Goals</h3>
+          <p>Build strength, stamina, and endurance with us.</p>
+          <a href="#membership" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/gym3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <h3>Stay Motivated, Stay Healthy</h3>
+          <p>Join a community of fitness enthusiasts.</p>
+          <a href="#membership" class="btn btn-primary">Explore Plans</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+  </div>
 
 
 
@@ -482,12 +532,12 @@
   <!-- Bootstrap JS -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-  <!-- <script>
+  <script>
     AOS.init({
       duration: 1000, // Animation duration (in ms)
       offset: 120,    // Offset from the viewport (in px)
     });
-  </script> -->
+  </script>
 
 </body>
 
